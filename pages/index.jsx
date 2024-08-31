@@ -111,7 +111,7 @@ export default function Home() {
           </motion.p>
 
           <Image
-            src={"/avatar.jpeg"}
+            src={"/avatar_new.png"}
             alt="Samson Brody"
             width={300}
             height={300}
