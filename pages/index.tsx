@@ -153,8 +153,8 @@ export default function Home() {
           <motion.li variants={item}>
             <img
               className="w-8 text-blue-300 "
-              src="/JavaScript-logo.png"
-              alt="sanity"
+              src="/Typescript_logo_2020.svg.png"
+              alt="typescript"
             />
           </motion.li>
         </motion.ul>
