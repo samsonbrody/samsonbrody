@@ -46,7 +46,7 @@ export default function Home() {
         d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
         style={{ pathLength: scrollYProgress }}
       />
-      <div className="w-screen h-screen  bg-[#031926] flex items-center flex-col justify-center">
+      <div className="w-screen h-screen  bg-[#1c1e2b] flex items-center flex-col justify-center">
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -54,7 +54,7 @@ export default function Home() {
               animate={{ x: "calc(100vw - 100%)", opacity: 1 }}
               transition={{ ease: "easeInOut", duration: 0.15 }}
               exit={{ x: -700, opacity: 0 }}
-              className="fixed top-0 w-full h-12 flex items-center justify-evenly text-[#071E22] bg-[#36827F] z-40"
+              className="fixed top-0 w-full h-12 flex items-center justify-evenly text-[#b2ccd6] bg-[#292d3e] z-40"
             >
               <a href="https://github.com/samsonbrody">
                 <p className="hover:opacity-80 hover:underline cursor-pointer hover:underline-offset-4 transition-all duration-150">
@@ -81,7 +81,7 @@ export default function Home() {
 
         <div className="top-0 right-2 fixed z-50">
           <Hamburger
-            color={isOpen ? "#071E22" : "#36827F"}
+            color={isOpen ? "#b2ccd6" : "#b2ccd6"}
             size={20}
             toggled={isOpen}
             toggle={setOpen}
@@ -92,7 +92,7 @@ export default function Home() {
             // initial={{ opacity: 0.3, scale: 1 }}
             // animate={{ opacity: 1, scale: 1 }}
             // transition={{ duration: 1 }}
-            className="text-[#77ACA2] font-Inter font-light mt-24 mb-12 text-3xl"
+            className="text-[#b2ccd6] font-Inter font-light mt-24 mb-12 text-3xl"
           >
             {`Hey, I'm Samson!`}
           </motion.p>
@@ -104,7 +104,7 @@ export default function Home() {
             height={300}
             className="rounded-full"
           />
-          <motion.p className="text-[#9DBEBB] font-Inter font-light mt-12 text-xl text-center px-4">
+          <motion.p className="text-[#b2ccd6] font-Inter font-light mt-12 text-xl text-center px-4">
             {` I'm a web developer and musician based in Los Angeles, currently working at `}
             <Link
               href={`https://www.spectrasonics.net/`}
