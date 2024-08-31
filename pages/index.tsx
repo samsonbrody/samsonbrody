@@ -124,13 +124,6 @@ export default function Home() {
         >
           <motion.li variants={item}>
             <img
-              className="w-10"
-              src="/1174949_js_react js_logo_react_react native_icon.png"
-              alt="react"
-            />
-          </motion.li>
-          <motion.li variants={item}>
-            <img
               className="w-20 text-blue-300 invert"
               src="/800px-Nextjs-logo.svg.png"
               alt="next"
@@ -138,9 +131,9 @@ export default function Home() {
           </motion.li>
           <motion.li variants={item}>
             <img
-              className="w-10 text-blue-300 "
-              src="/sanitylogo.webp"
-              alt="sanity"
+              className="w-10"
+              src="/1174949_js_react js_logo_react_react native_icon.png"
+              alt="react"
             />
           </motion.li>
           <motion.li variants={item}>
@@ -155,6 +148,13 @@ export default function Home() {
               className="w-8 text-blue-300 "
               src="/Typescript_logo_2020.svg.png"
               alt="typescript"
+            />
+          </motion.li>
+          <motion.li variants={item}>
+            <img
+              className="w-14 text-blue-300 "
+              src="/php-logo-png-transparent.png"
+              alt="php"
             />
           </motion.li>
         </motion.ul>
