@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, ReactNode } from "react";
 import {
   motion,
   useScroll,
@@ -14,23 +14,6 @@ import {
 import { useInView } from "react-intersection-observer"; // 1.9K gzipped
 import { Divide as Hamburger } from "hamburger-react";
 import { BsGithub, BsTwitter, BsInstagram } from "react-icons/bs";
-
-function FadeInWhenVisible({ children }) {
-  return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      transition={{ duration: 2.5 }}
-      variants={{
-        visible: { opacity: 1, scale: 1 },
-        hidden: { opacity: 0, scale: 1 },
-      }}
-    >
-      {children}
-    </motion.div>
-  );
-}
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
