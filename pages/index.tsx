@@ -30,7 +30,7 @@ export default function Home() {
   };
 
   const item = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
     show: { opacity: 1 },
   };
 
@@ -52,7 +52,7 @@ export default function Home() {
             <motion.div
               initial={{ x: "100%", opacity: 0 }}
               animate={{ x: "calc(100vw - 100%)", opacity: 1 }}
-              transition={{ ease: "easeInOut", duration: 0.5 }}
+              transition={{ ease: "easeInOut", duration: 0.15 }}
               exit={{ x: -700, opacity: 0 }}
               className="fixed top-0 w-full h-12 flex items-center justify-evenly text-[#071E22] bg-[#36827F] z-40"
             >
